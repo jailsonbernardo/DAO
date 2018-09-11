@@ -27,4 +27,20 @@ $usuario = new Usuario();
 $usuario->login("Jailson", "12345");
 
 echo $usuario;
-*/
+
+
+$aluno = new Usuario("aluno","aluno");
+
+$aluno->insert();
+
+echo $aluno;
+
+ */
+
+//atualizando um novo usuario
+
+$usuario = new Usuario();
+$usuario->loadById(18);
+$usuario->update("professor", "!@&*D");
+
+echo $usuario;
