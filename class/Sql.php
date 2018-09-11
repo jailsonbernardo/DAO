@@ -32,7 +32,7 @@ class Sql extends PDO {
     public function select($rawQuery, $params = array()): array {
         $stmt = $this->query($rawQuery, $params);
 
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_BOTH);
     }
 
 }

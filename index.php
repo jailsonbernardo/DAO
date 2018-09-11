@@ -35,12 +35,20 @@ $aluno->insert();
 
 echo $aluno;
 
- */
+
 
 //atualizando um novo usuario
 
 $usuario = new Usuario();
 $usuario->loadById(18);
 $usuario->update("professor", "!@&*D");
+
+echo $usuario;
+ 
+ */
+
+$usuario = new Usuario();
+$usuario->loadById(19);
+$usuario->delete();
 
 echo $usuario;
